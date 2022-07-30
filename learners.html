@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>learners</title>
+  <link rel="stylesheet" href="copy.css">
+
+  <style>
+    #cara {
+        list-style: none;
+        background-color: #fafbfc;
+        padding: 10px 20px;
+    }
+    #cara li {
+        display: flex;
+        flex-direction: column;
+    }
+    #cara li h2, #cara li span {
+        padding: 10px;
+    }
+    #cara li button {
+        display: none;
+    }
+    {
+    border: 2px solid #ffa300;
+    /* border-radius: 50%; */
+    width: 180px;
+    height: 180px;
+}
+  </style>
+</head>
+<body>
+  <section class="main-section">
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <a href="#"><i class="fa fa-search"></i></a>
+      <!-- <div class="icon">
+        <ion-icon size="large" name="search-sharp"></ion-icon>
+      </div> -->
+    </div>
+
+    <nav>
+      <h2 class="logo">Dashboard Subjects</h2>
+      <ul class="nav-list">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Statistics</a></li>
+    </ul>
+    </nav>
+    <main>
+        <div class="students">
+            <div class="student-subnav">1</div>
+            <div class="add-student">
+                <div class="student-Add-Search">
+                    <input type="text" name="" id="" placeholder="Search">
+                    <button class="AddStudent">Add Learner</button>
+                </div>
+                <div class="inputArea">
+                    <input type="text" id="name" name="fullName" placeholder="Name & Surname">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <input type="number" id="idno" name="idno" placeholder="ID Number">
+
+                    <!-- <input type="radio" name="gender" id="male" checked value="Male">
+                    <label for="male" class="radio-label" ><span class="radio-border"></span>Male</label>
+
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="female" class="radio-label" ><span class="radio-border"></span>Female</label>
+
+                    <input type="radio" name="gender" id="other" value="Other">
+                    <label for="other" class="radio-label" ><span class="radio-border"></span>Other</label> -->
+
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <button class="stuSubmit">Add</button>
+                </div>
+            </div>
+            <div class="view-student">
+                <div class="vert1">
+                    <h2>0</h2>
+                    <p>Learners</p>
+                </div>
+
+                <div class="card">
+                    <ul id="cart"></ul>
+                </div>
+
+                <ul id="cara">
+                    <li id="1)">
+                        <div class="studentName">
+                            <h2>Musa</h2>
+                            <button>view</button>
+                            <span>Mathematics</span>
+                        </div>
+                        <span><i class="fa fa-address-card"></i> 387432t587</span>
+                        <span><i class="fa fa-user"></i> 387432t587</span>
+                        <span><i class="fa fa-envelope"></i> siyamketsu97@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="display-student">3</div>
+        </div>
+    </main>
+    <aside>
+      <h3 class="sidebar__title">Brand</h3>
+      <ul class="sidebar">
+        <li><a href="#"><i class="fa fa-home"></i> <span>My Subjects</span></a></li>
+        <li><a href="#"><i class="fa fa-comment"></i> <span>Chats</span></a></li>
+        <li><a href="#"><i class="fa fa-tasks"></i> <span>Tasks</span></a></li>
+        <li><a href="#"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+        <li><a href="#"><i class="fa fa-edit"></i> <span>Posts</span></a></li>
+        <li><a href="#"><i class="fa">&#xf201;</i> <span>Statistics</span></a></li>
+      </ul>
+
+      <div class="drag-area">
+        <span><i class="fa fa-cloud-upload"></i><p>Drag & Drosp or <strong>Upload</strong></p></span>
+        <input type="file" id="file" name="file">
+      </div>
+    </aside>
+  </section>
+
+  <script src="webapp.js"></script>
+</body>
+</html>
