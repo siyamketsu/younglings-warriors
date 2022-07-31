@@ -75,16 +75,19 @@ body{
 .login-container label {
   color: #7e8Fb3;
 }
-.login-container .login-btn input {
+.login-container .login-btn a {
     padding: 10px 31px;
+    background-color: #ffffff;
   color: #7e8Fb3;
   cursor: pointer;
   transition: 0.5s;
   border: none;
   border-radius: 5px;
+  border: 1px solid #c3cad9;
+  text-decoration: none;
 }
 .login-container .login-btn .confirm {
-  background: #3361ff;
+  background-color: #3361ff;
   color: #fff;
 }
 .login-container form .signup {

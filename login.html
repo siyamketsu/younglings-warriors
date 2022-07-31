@@ -15,7 +15,7 @@
                 <img src="images/teachstudents.jpg" />
               </div>
               <form>
-                <label for="fname">First name</label>git
+                <label for="fname">First name</label>
                 <input type="text" name="fname" id="fname">
 
                 <label for="lname">Last name</label>
@@ -27,8 +27,8 @@
                 <label for="passwd">Password</label>
                 <input type="password" name="passwd" id="passwd">
                 <div class="login-btn">
-                    <input class="confirm" type="submit" name="" value="Confirm">
-                    <input class="cancel" type="submit" name="" value="Cancel">
+                    <a href="index.html" class="confirm">Confirm</a>
+                        <a href="#">Cancel</a>
                 </div>
                 <p class="signup"><a href="#" onclick="toggleForm();"><i class="fa fa-arrow-left"></i> Student</a>
                 </p>
@@ -48,8 +48,8 @@
                     <label for="passwd">Password</label>
                     <input type="password" name="passwd" id="passwd">
                     <div class="login-btn">
-                        <input class="confirm" type="submit" name="" value="Confirm">
-                        <input class="cancel" type="submit" name="" value="Cancel">
+                        <a href="index.html" class="confirm">Confirm</a>
+                        <a href="#">Cancel</a>
                     </div>
                     <p class="signup left"><a href="#" onclick="toggleForm();">Teacher <i class="fa fa-arrow-right"></i></a>
                   </p>
@@ -58,12 +58,7 @@
             </div>
         </section>
 
-        <script>
-                  function toggleForm() {
-        let loginContainer = document.querySelector(".login-container");
-        loginContainer.classList.toggle("active");
-      }
-        </script>
+        <script src="webapp.js"></script>
      
       </body>
 </body>

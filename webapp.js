@@ -33,3 +33,8 @@ entry.addEventListener('click', function () {
     }            
 });
 
+function toggleForm() {
+    let loginContainer = document.querySelector(".login-container");
+    loginContainer.classList.toggle("active");
+  }
+
