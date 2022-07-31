@@ -646,7 +646,16 @@ font-size: 20px;
 padding-right: 10px;
 }
 
-/* ====================================== ROADMAP SUBJECTSD ====================================== */
+/* ====================================== ROADMAP SUBJECTS ====================================== */
+.subject-contner {
+  display: flex;
+  flex-direction: column;
+}
+.student-subnav.addsub {padding: 30px 0;}
+.student-Add-Search.addsrch{margin: 0;
+  padding: 19px 25px;
+  background-color: #f8f8f8;
+}
 .fst {
   grid-area: fst;
   background-color: white;
@@ -764,7 +773,7 @@ padding-right: 10px;
  
  
  
- .snd{
+ /* .snd{
   margin:auto;
   width:90vw;
   height:110vh;
@@ -783,7 +792,7 @@ padding-right: 10px;
           
            
  grid-gap:0px;
- }
+ } */
  
  .roadmap-stats {
   height:85px;
@@ -940,15 +949,15 @@ padding-right: 10px;
  .road-container {
   display: grid;
   height: 100vh;
-  /* height: 80vh; */
+  height: 50vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.2fr 1fr 1.2fr 1.2fr 1.2fr 3fr;
+  grid-template-rows: 0.4fr 1fr 1.2fr 1.2fr 1.2fr 1.2fr;
   grid-template-areas: "grd1 grd2 grd3 grd4"
+  "grd1 grd2 grd3 grd4"
   "grd5 grd6 grd7 grd8"
   "grd9 grd10 grd11 grd12"
   "grd13 grd14 grd15 grd16"
-  "grd17 grd18 grd19 grd20"
-  ". . . .";
+  "grd17 grd18 grd19 grd20";
   grid-gap: 2px;
   background-color: #cbd1dd;
   border: 2px solid #cbd1dd;
@@ -966,7 +975,9 @@ padding-right: 10px;
  }
  .grd3, .grd5, .grd6, .grd7 {
   background-color: #ffffff;
- }
+  display: flex;
+  align-items: center;
+}
  .grd4 {
   grid-area: grd4;
   background-color: #ffffff;
@@ -984,6 +995,11 @@ padding-right: 10px;
   background-color: #ffffff;
  }
  .row1, .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .row2 div {
   display: flex;
   justify-content: center;
   align-items: center;

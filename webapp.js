@@ -18,7 +18,7 @@ let currentIndex = 1;
 entry.addEventListener('click', function () {
     
     if ( fuName.value !== '' && subj.value !== '' && idNo.value !== '' && gender.value !== '' && email.value !== '') {
-        studentNo.innerHTML = currentIndex;
+        // studentNo.innerHTML = currentIndex;
         cartEl.innerHTML += '<li id="' + currentIndex +  '"><h2>'
             + fuName.value + '</h2><button>view</button></li>';
 
