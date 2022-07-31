@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <body>
+        <section class="login-container">
+            <div class="sign-in teacher-in">
+              <div class="img-size">
+                <img src="images/teachstudents.jpg" />
+              </div>
+              <form>
+                <label for="fname">First name</label>git
+                <input type="text" name="fname" id="fname">
+
+                <label for="lname">Last name</label>
+                <input type="text" name="lname" id="lname">
+
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email">
+
+                <label for="passwd">Password</label>
+                <input type="password" name="passwd" id="passwd">
+                <div class="login-btn">
+                    <input class="confirm" type="submit" name="" value="Confirm">
+                    <input class="cancel" type="submit" name="" value="Cancel">
+                </div>
+                <p class="signup"><a href="#" onclick="toggleForm();"><i class="fa fa-arrow-left"></i> Student</a>
+                </p>
+              </form>
+            </div>
+            <div class="sign-in learner-in">
+                <form>
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname" id="fname">
+
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" id="lname">
+
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="passwd">Password</label>
+                    <input type="password" name="passwd" id="passwd">
+                    <div class="login-btn">
+                        <input class="confirm" type="submit" name="" value="Confirm">
+                        <input class="cancel" type="submit" name="" value="Cancel">
+                    </div>
+                    <p class="signup left"><a href="#" onclick="toggleForm();">Teacher <i class="fa fa-arrow-right"></i></a>
+                  </p>
+                </form>
+              <div class="img-size"><img src="images/student.png" /></div>
+            </div>
+        </section>
+
+        <script>
+                  function toggleForm() {
+        let loginContainer = document.querySelector(".login-container");
+        loginContainer.classList.toggle("active");
+      }
+        </script>
+     
+      </body>
+</body>
+</html>
